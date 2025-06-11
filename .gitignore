@@ -6,3 +6,4 @@ logs/
 google_creds.json
 app/data/menu.json
 app/data/recipes.json
+.idea/

@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+venv/
+logs/
+google_creds.json
+app/data/menu.json
+app/data/recipes.json

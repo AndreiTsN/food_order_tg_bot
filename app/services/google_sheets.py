@@ -72,9 +72,9 @@ def save_summary_to_sheet(summary: dict, total: int, start_date: datetime.date, 
     """
     # Получаем или создаём лист "Summary"
     try:
-        summary_sheet = gc.open_by_key(SHEET_ID).worksheet("Summary")
+        summary_sheet = gc.open_by_key(GOOGLE_SHEET_ID).worksheet("Summary")
     except gspread.exceptions.WorksheetNotFound:
-        summary_sheet = gc.open_by_key(SHEET_ID).add_worksheet(title="Summary", rows="100", cols="20")
+        summary_sheet = gc.open_by_key(GOOGLE_SHEET_ID).add_worksheet(title="Summary", rows="100", cols="20")
 
     # Очищаем старую сводку
     summary_sheet.clear()
